@@ -13,11 +13,14 @@ jobs:
     - name: tshirts fail
       run: |
         gcc -Wall -Wextra -Werror tshirts.c tshirts-test.c -o tshirts.out
+        ./tshirts.out
 
     - name: misaligned fail
       run: |
         gcc -Wall -Wextra -Werror misaligned.c misaligned-test.c -o misaligned.out
+        ./misaligned.out
 
     - name: alerter fail
       run: |
         gcc -Wall -Wextra -Werror alerter.c alerter-test.c -o alerter.out
+        ./alerter.out
